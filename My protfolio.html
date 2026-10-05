@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leomar Mariñas | BSIT Student & Aspiring Network Engineer</title>
+  <meta name="description" content="Portfolio of a 3rd-year BSIT student learning networking and programming.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#home">Leomar Mariñas</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  <nav id="navLinks">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a>
+    <a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#networking">Networking</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+<main>
+<!-- HOME: replace [Your Name] and the intro text -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="badge">3rd Year BSIT Student</p>
+    <h1>Hi, I'm Leomar Mariñas</h1>
+    <h2>BSIT Student</h2>
+    <p>Hi, I'm Leomar Mariñas, a 3rd-year Bachelor of Science in Information Technology student passionate about networking, programming, and technology. I'm continuously developing my technical skills through academic projects, hands-on laboratories, and self-study.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">View My Projects</a>
+      <a class="btn" href="#contact">Contact Me</a>
+    </div>
+    <ul class="chips" id="interests"></ul>
+  </div>
+  <!-- Replace with your photo: put it in /images and change the src -->
+  <img class="photo" src="prof.png" alt="Photo of [Your Name]">
+</section>
+
+<section id="about">
+  <h2 class="title">About Me</h2>
+  <div class="two-col">
+    <div>
+      <p>I am currently a 3rd-year BSIT student with an interest in computer networking, web development, cybersecurity, and IT infrastructure. I enjoy learning through hands-on activities, laboratory exercises, and personal projects. My long-term goal is to become a skilled Network Engineer while continuing to improve my programming and IT skills.</p>
+      <p>I'm still learning, and I treat every lab and project as practice. I break problems into small steps, test often, and read documentation when I'm stuck.</p>
+    </div>
+    <div class="card"><h3>Currently Learning</h3><ul class="list" id="learning"></ul>   
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2 class="title">Educational Journey</h2>
+  <div class="timeline" id="timeline"></div>
+</section>
+
+<section id="skills">
+  <h2 class="title">Skills</h2>
+  <p class="note">As a 3rd-year BSIT student majoring in Network Design and Management, I have basic skills in computer networking, network configuration, and troubleshooting. I am familiar with Cisco Packet Tracer, VLANs, IP addressing, subnetting, routing, switching, and basic network security concepts. I also have beginner-level programming and web development skills, including HTML, CSS, and basic JavaScript. I am continuously improving my technical skills through hands-on activities, networking labs, and personal projects, with the goal of becoming a skilled Network Engineer in the future.</p>
+  <div class="grid" id="skillGrid"></div>
+</section>
+
+<section id="projects">
+  <h2 class="title">Projects</h2>
+  <div class="grid" id="projectGrid"></div>
+  <p class="center"><a class="btn" href="[GitHub URL]" target="_blank" rel="noopener">View More Projects on GitHub</a></p>
+</section>
+
+<section id="networking">
+  <h2 class="title">Networking Labs</h2>
+  <p class="note">Practice labs built mostly in Cisco Packet Tracer.</p>
+  <div class="grid" id="labGrid"></div>
+</section>
+
+<section id="contact">
+  <h2 class="title">Contact</h2>
+  <div class="two-col">
+    <ul class="list contact-list">
+      <li><strong>Email:</strong> [Email]</li>
+      <li><strong>GitHub:</strong> <a href="[GitHub URL]">[GitHub URL]</a></li>
+      <li><strong>LinkedIn:</strong> <a href="[LinkedIn URL]">[LinkedIn URL]</a></li>
+      <li><strong>Facebook:</strong> <a href="[Facebook URL]">[Facebook URL]</a></li>
+      <li><strong>Location:</strong> [Your City, Country]</li>
+    </ul>
+    <form id="contactForm" class="card" novalidate>
+      <label>Name <input name="name" required autocomplete="name"></label>
+      <label>Email <input name="email" type="email" required autocomplete="email"></label>
+      <label>Message <textarea name="message" rows="4" required></textarea></label>
+      <button class="btn primary" type="submit">Send Message</button>
+      <p id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>[Your Name] | BSIT Student & Aspiring Network Engineer</p>
+  <p><a href="[GitHub URL]">GitHub</a> · <a href="[LinkedIn URL]">LinkedIn</a> · <a href="mailto:[Email]">Email</a></p>
+  <p>© 2026 [Your Name]. All rights reserved.</p>
+</footer>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
